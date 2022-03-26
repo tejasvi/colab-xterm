@@ -5,7 +5,7 @@ import { FitAddon } from 'xterm-addon-fit';
 import lodash from 'lodash';
 
 function main() {
-    const term = new Terminal();
+    const term = new Terminal({fontFamily: 'monospace'});
     const fitAddon = new FitAddon();
     (window as any).term = term;
     (window as any).fitAddon = fitAddon;
